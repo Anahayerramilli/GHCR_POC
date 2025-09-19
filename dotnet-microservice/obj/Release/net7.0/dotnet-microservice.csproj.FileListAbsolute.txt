@@ -1,0 +1,7 @@
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\rpswa.dswa.cache.json
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.AssemblyInfoInputs.cache
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.AssemblyInfo.cs
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.csproj.CoreCompileInputs.cache
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\obj\Release\net7.0\dotnet-microservice.sourcelink.json

@@ -1,0 +1,5 @@
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\publish\dotnet-microservice.exe
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\publish\dotnet-microservice.dll
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\publish\dotnet-microservice.deps.json
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\publish\dotnet-microservice.runtimeconfig.json
+C:\Users\yerramilli.ananth\GHCR_POC\dotnet-microservice\publish\dotnet-microservice.pdb
