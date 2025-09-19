@@ -10,26 +10,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_PAT }}
+    - name: Log in to GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push Python microservice
-        uses: docker/build-push-action@v4
-        with:
-          context: ./python-microservice
-          push: true
-          tags: ghcr.io/anahayerramilli/python-microservice:latest
+    - name: Build and push Python microservice
+      uses: docker/build-push-action@v4
+      with:
+        context: ./python-microservice
+        push: true
+        tags: ghcr.io/${{ github.repository_owner }}/python-microservice:latest
 
-      - name: Build and push .NET microservice
-        uses: docker/build-push-action@v4
-        with:
-          context: ./dotnet-microservice
-          push: true
-          tags: ghcr.io/anahayerramilli/dotnet-microservice:latest
+    - name: Build and push .NET microservice
+      uses: docker/build-push-action@v4
+      with:
+        context: ./dotnet-microservice
+        push: true
+        tags: ghcr.io/${{ github.repository_owner }}/dotnet-microservice:latest
+
+    - name: Verify pushed .NET image by pulling
+      run: |
+        docker pull ghcr.io/${{ github.repository_owner }}/dotnet-microservice:latest
+        docker images ghcr.io/${{ github.repository_owner }}/dotnet-microservice
+
+    - name: Verify pushed Python image by pulling
+      run: |
+        docker pull ghcr.io/${{ github.repository_owner }}/python-microservice:latest
+        docker images ghcr.io/${{ github.repository_owner }}/python-microservice
